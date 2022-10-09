@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background: #1abc9c;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0%;
+}
+
+nav ul {
+    margin: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+a.active, a:hover {
+    background-color: #101820;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.bars {
+    font-size: 20px;
+    color: #fff;
+    float:right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.admission{
+    background-color: #0b141d;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #969494;
+}
+
+#manuicon{
+    display: none;
+}
+
+section{
+    background:url('/img/baiust.gif') no-repeat;
+    background-size: cover;
+    height: calc(100vh);
+    opacity: calc(10%);
+}
+
+h1{
+    width: 100%;
+    height: auto;
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+img{
+    display: none;
+}
+h2{
+    display: none;
+}
+
+
+
+/* ---------atik59----------- */
+/* ---------atik59----------- */
+/* ---------atik59----------- */
+/* ---------atik59----------- */
+/* ---------atik59----------- */
+
+
+
+@media (max-width:800px) {
+    
+    .brand{
+        font-size: 16px;
+        padding-left:20px;
+    }
+
+    .bars{
+        display:block;
+    }
+    .nav{
+        position: relative;
+    }
+    ul{
+        position: fixed;
+        top:40px;
+        left: -100%;
+        width:100%;
+        height: auto;
+        background: #34495e;
+        text-align: center;
+        transition: all 0.5s;
+        opacity: calc(80%);
+    }
+    nav ul {
+        margin: 0px;
+        margin-top: 30px;
+    }
+    nav ul li {
+        display:block;
+        margin: 40px 0;
+        line-height: 10px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+    }
+
+    a.active, a:hover{
+        background: none;
+        color:#16a085 ;
+    }
+
+    h1{
+        display: none;
+    }
+
+    img{
+        display: inline-block;
+        width: 50px;
+        height: auto;
+        margin: 5px 15px;
+    }
+
+    h2{
+        display: inline-block;
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        left: 40%;
+        font-size: 150%;
+    }
+    #manuicon:checked ~ ul{
+        left: 0;
+    }
+}
